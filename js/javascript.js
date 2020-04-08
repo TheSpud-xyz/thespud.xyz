@@ -26,6 +26,9 @@ function includeHTML() {
   }
 }
 //jQuery stuff starting here (sorry Harry)
+
+//I don't understand this but there's a start-pressed.png in /img/ that can
+//be used here I just don't know how to implement it
 $(document).ready(function(){
   console.log("jQuery Loaded")
   $(".startButton").click(function () {

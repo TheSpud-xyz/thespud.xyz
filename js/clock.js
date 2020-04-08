@@ -10,7 +10,7 @@ function startTime(){
     }else {
         hr = "AM";
     }
-    document.getElementById('clock').innerHTML = h + ":" + m + " " + hr;
+    document.getElementById('clock').innerHTML = "<p style=\"color: black;\">" + h + ":" + m + " " + hr + "</p>";
     var t = setTimeout(startTime, 500);
 }
 

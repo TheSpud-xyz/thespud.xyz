@@ -15,59 +15,29 @@
 	<div class="monitor">
 		<img src="img/desktop.png" id="monitor">
 		<div class="screen">
-			<div class="icons">
-				<div class="icon">
-					<a href="contactInfo.html"><img class="iconImage" src="img/contactInfo.png">
-						<div>Contact Information</div>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="minecraftInfo.html"><img class="iconImage" src="img/minecraft.png">
-						<div>Minecraft Servers</div>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="http://plex.thespud.xyz:32400"><img class="iconImage" src="img/plex.png">
-						<div>Plex</div>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="potionSeller.html"><img class="iconImage" src="img/potion.png">
-						<div>Potion Shop</div>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="http://thespud.xyz:8123"><img class="iconImage" src="img/minecraftMap.png">
-						<div>Minecraft SMP Map</div>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="minecraftInfo.html"><img class="iconImage" src="img/minecraft.png">
-						<div>Temp</div>
-					</a>
-				</div>
+			<div w3-include-html="screen.html">
+
+			</div>
+			<div id="clock"></div>
+
+			<div class="minecraftServerList">
+				<img src="img/minecraftMultiplayer.png" class="multiplayerWindow">
+				<div class="serverInfo">
+					<img id="serverIcon">
+					<div class="serverTitle"><p>thespud.xyz</p></div>
+					<pre id="rest">Pinging...</pre>
+					<div id="players"></div>
+			  	</div>
 			</div>
 			<a href="index.html">
-				<img src="img/start.png" class="startButton" alt="" onclick="">
+				<div class="close2"></div>
 			</a>
-			<div id="clock"></div>
-				<div class="minecraftServerList">
-					<img src="img/minecraftMultiplayer.png" class="multiplayerWindow">
-					<div class="serverInfo">
-						<img id="serverIcon">
-						<div class="serverTitle"><p>thespud.xyz</p></div>
-					  	<pre id="rest">Pinging...</pre>
-					  	<div id="players"></div>
-				  </div>
-
-				</div>
-				<a href="index.html">
-					<div class="close2"></div>
-				</a>
-			</div>
 		</div>
 	</div>
-
+	</div>
+	<script>
+		includeHTML();
+	</script>
 </body>
 </html>
 
