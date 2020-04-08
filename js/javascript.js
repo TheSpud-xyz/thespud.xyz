@@ -27,11 +27,12 @@ function includeHTML() {
 }
 //jQuery stuff starting here (sorry Harry)
 $(document).ready(function(){
-  $(".startButton").click(function(){
-
-    if($('#startmenu').css('display') == "none") {
+  console.log("jQuery Loaded");
+  $(".startButton").click(function () {
+    console.log("Start button pressed");
+    if ($('#startmenu').css('display') == "none") {
       $('#startmenu').css("display", "block");
-    } else if($('#startmenu').css('display') == "block"){
+    } else if ($('#startmenu').css('display') == "block") {
       $('#startmenu').css("display", "none");
     }
   });
