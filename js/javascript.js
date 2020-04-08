@@ -1,42 +1,3 @@
-function startTime(){
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var hr = " ";
-    m = addZeroes(m);
-    if (h > 12) {
-        h -= 12;
-        hr = "PM";
-    }else {
-        hr = "AM";
-    }
-    document.getElementById('clock').innerHTML = h + ":" + m + " " + hr;
-    var t = setTimeout(startTime, 500);
-}
-
-function addZeroes(i) {
-  if (i < 10){
-      i = "0" + i
-  };
-  return i;
-}
-
-//based on a pen by @robinselmer
-var url = "https://mcapi.us/server/status?ip=thespud.xyz&port=25565";
-//https://mcapi.us/server/status?ip=666.fluctis.com&port=25757
-$.getJSON(url, function(r) {
-    //data is the JSON string
- if(r.error){
-    $('#rest').html('Can\'t Reach Server');
-   return false;
- }
- console.log(r.motd);
- var newMotd = r.motd.replaceColorCodes();
- $('#rest').html(newMotd);
- $('#players').html(r.players.now + '/' + r.players.max);
- $('#serverIcon').attr('src', r.favicon);
-});
-
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -63,4 +24,28 @@ function includeHTML() {
       return;
     }
   }
+}
+
+
+function startTime(){
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var hr = " ";
+    m = addZeroes(m);
+    if (h > 12) {
+        h -= 12;
+        hr = "PM";
+    }else {
+        hr = "AM";
+    }
+    document.getElementById('clock').innerHTML = h + ":" + m + " " + hr;
+    var t = setTimeout(startTime, 500);
+}
+
+function addZeroes(i) {
+  if (i < 10){
+      i = "0" + i
+  };
+  return i;
 }
