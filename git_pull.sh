@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /var/www/html/
-git reset --hard HEAD
-git pull
+/usr/bin/git reset --hard HEAD
+/usr/bin/git pull
