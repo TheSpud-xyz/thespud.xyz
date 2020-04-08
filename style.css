@@ -133,6 +133,8 @@ a{
 #clock{
     height:3.5%;
     width: 9.8%;
+    top: 0px;
+    left: 0px;
     position: absolute;
     text-align: center;
     font-size: 10pt;
