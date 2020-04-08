@@ -1,6 +1,6 @@
 <?php
-echo "Test push 3";
 if ($_POST['payload']) {
-shell_exec('cd /var/www/html/ && git reset --hard HEAD && git pull');
+$shell_response = `sh /var/www/html/git_pull.sh`;
+echo "$shell_response";
 }
 ?>
