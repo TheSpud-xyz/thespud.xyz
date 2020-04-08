@@ -27,7 +27,7 @@ function includeHTML() {
 }
 //jQuery stuff starting here (sorry Harry)
 $(document).ready(function(){
-  console.log("jQuery Loaded");
+  console.log("jQuery Loaded")
   $(".startButton").click(function () {
     console.log("Start button pressed");
     if ($('#startmenu').css('display') == "none") {
