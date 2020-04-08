@@ -1,5 +1,5 @@
 #!/bin/bash
 cd /var/www/html/
-/usr/bin/git reset --hard HEAD
-/usr/bin/git pull
+git reset --hard HEAD 2>&1
+git pull 2>&1
 git status 2>&1
