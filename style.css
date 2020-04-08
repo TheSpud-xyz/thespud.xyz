@@ -1,0 +1,146 @@
+body{
+    background-color: #13181B;
+    image-rendering: pixelated;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+    color: lightgrey;
+}
+.monitor{
+    width: 100vh;
+    height: 97vh;
+    display: inline-block;
+    position: relative;
+}
+.screen{
+        width: 85.8%;
+        height: 68.5%;
+        position: absolute;
+        top: 7.4%;
+        left: 7.1%;
+}
+.icon{
+    font-size: 1.6vh;
+}
+
+.icons{
+    text-align: center;
+    width: 12vh;
+    height: 90%;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: sans-serif;
+}
+.iconImage{
+    height: 5vh;
+    max-height: 7vh;
+    margin-top: 5px;
+}
+.startButton{
+    width: 8%;
+    position: absolute;
+    left: 0.5%;
+    top: 95%;
+}
+.contactWindow{
+    margin-top: 12%;
+    height: 66%;
+}
+.windowTabPressed{
+    position: absolute;
+    top: 95%;
+    left: 9%;
+    height: 4.3%;
+}
+.contactWindowTabText{
+    position: absolute;
+    top: 96%;
+    left: 9.5%;
+    height: 2.5%;
+}
+.contactLinkDiv{
+    position: absolute;
+    top: 23%;
+    left: 19.5%;
+    width: 57%;
+    height: 9%;
+}
+.contactLink{
+    width: 13%;
+    height: 100%;
+    position: relative;
+    float: left;
+    margin-right: 3%;
+}
+.close{
+    position:absolute;
+    top: 16.5%;
+    left: 79.5%;
+    width: 2%;
+    height: 2.3%;
+}
+.close2{
+    position:absolute;
+    top: 6.5%;
+    left: 95%;
+    width: 2%;
+    height: 2.3%;
+}
+.multiplayerWindow{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    height: 70%;
+}
+.serverInfo{
+    text-align: left;
+    position: absolute;
+    left: 16%;
+    top: 19%;
+    height: 37%;
+    width: 70%;
+    color: white;
+    font-family: sans-serif;
+}
+.serverTitle{
+    position: absolute;
+    top: -7%;
+    left: 15%;
+}
+#rest{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+#players{
+    position: absolute;
+    top: -1%;
+    left: 90%;
+}
+#serverIcon{
+    width: 13%;
+    position: relative;
+    top: 0.5%;
+}
+#clock{
+    height:3.5%;
+    width: 9.8%;
+    position: absolute;
+    left: 90%;
+    top: 96%;
+    text-align: center;
+    font-size: 10pt;
+    font-family: sans-serif;
+}
+#monitor{
+    width: inherit;
+    height: inherit;
+}
