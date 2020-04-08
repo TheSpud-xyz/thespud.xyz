@@ -25,15 +25,17 @@ function includeHTML() {
     }
   }
 }
+
+//Called when start button is pressed
+function startButtonPressed(){
+  console.log("Start button pressed");
+  if ($('#startmenu').css('display') == "none") {
+    $('#startmenu').css("display", "block");
+  } else if ($('#startmenu').css('display') == "block") {
+    $('#startmenu').css("display", "none");
+  }
+};
 //jQuery stuff starting here (sorry Harry)
 $(document).ready(function(){
   console.log("jQuery Loaded")
-  function startButtonPressed(){
-    console.log("Start button pressed");
-    if ($('#startmenu').css('display') == "none") {
-      $('#startmenu').css("display", "block");
-    } else if ($('#startmenu').css('display') == "block") {
-      $('#startmenu').css("display", "none");
-    }
-  };
 });
