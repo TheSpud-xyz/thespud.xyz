@@ -1,5 +1,4 @@
 <?php
-header("HTTP/1.1 200 OK");
 // Use in the “Post-Receive URLs” section of your GitHub repo.
 
 if ( $_POST['payload'] ) {
