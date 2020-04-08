@@ -17,7 +17,7 @@ function includeHTML() {
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
         }
-      }
+      };
       xhttp.open("GET", file, true);
       xhttp.send();
       /* Exit the function: */
@@ -25,3 +25,14 @@ function includeHTML() {
     }
   }
 }
+//jQuery stuff starting here (sorry Harry)
+$(document).ready(function(){
+  $(".startButton").click(function(){
+
+    if($('#startmenu').css('display') == "none") {
+      $('#startmenu').css("display", "block");
+    } else if($('#startmenu').css('display') == "block"){
+      $('#startmenu').css("display", "none");
+    }
+  });
+});
