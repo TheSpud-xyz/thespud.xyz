@@ -1,6 +1,6 @@
 <?php
-echo "Success!";
 if ($_POST['payload']) {
-shell_exec('cd /var/www/html/ && git reset --hard MASTER && git pull');
+$shell_response = shell_exec('./git_pull.sh');
+echo "$shell_response";
 }
 ?>
