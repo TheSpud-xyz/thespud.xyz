@@ -29,7 +29,6 @@ function includeHTML() {
 
 //jQuery stuff starting here (sorry Harry
 function startMenu(action){
-    console.log('startmenu run');
     if(action === 'toggle'){
         if(startMenu('isOpen')){
             startMenu('close');
