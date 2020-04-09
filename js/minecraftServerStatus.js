@@ -5,6 +5,7 @@ function checkServer(){
     $('#rest').html("Pinging...");
     //https://mcapi.us/server/status?ip=666.fluctis.com&port=25757
     $.getJSON(url, function(r) {
+        sleep(500);
         //data is the JSON string
      if(r.online == false){
         $('#rest').html('Can\'t Reach Server');
@@ -23,4 +24,13 @@ function checkServer(){
 
     });
 
+}
+
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
