@@ -38,9 +38,11 @@ function startMenu(action){
     }
     if(action === 'close'){
         $('#startmenu').css("display", "none");
+        $('img.startButton').attr('src','img/start.png')
     }
     if(action === 'open'){
         $('#startmenu').css("display", "block");
+        $('img.startButton').attr('src','img/start-pressed.png')
     }
     if(action === 'isOpen'){
         if($('#startmenu').css('display') == "none"){
