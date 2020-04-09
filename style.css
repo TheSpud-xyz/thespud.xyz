@@ -122,10 +122,23 @@ h2{
 .minecraftServerWindow{
     display: none;
 }
+.playersOnline{
+    font-size: 0.8em;
+    position: relative;
+    top: 7.8vh;
+    left: 9.3vh;
+}
+.innerPlayersOnline{
+    margin-top: 0.2vh;
+    color: grey;
+}
 #rest{
+    font-family: MinecraftiaRegular;
+    font-size: 0.8em;
+    color: grey;
     position: absolute;
-    top: 5%;
-    left: 15%;
+    top: 11%;
+    left: 15.3%;
 }
 #players{
     position: absolute;

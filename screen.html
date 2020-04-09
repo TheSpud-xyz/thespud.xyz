@@ -1,5 +1,6 @@
 <!-- Desktop -->
     <div class="icons">
+        <!-- TOOD: put all icons into a table, so more can be added horizontally -->
         <div class="icon" onclick="showContactInfo()">
             <img class="iconImage" src="img/contactInfo.png">
             <div>Contact Information</div>
@@ -65,8 +66,12 @@
                 <div class="serverInfo">
                     <img id="serverIcon">
                     <div class="serverTitle"><p>thespud.xyz</p></div>
-                    <pre id="rest">Pinging...</pre>
+                    <div id="rest">Pinging...</div>
                     <div id="players"></div>
+                    <div class="playersOnline">
+                        Players Online:
+                        <div class="innerPlayersOnline"></div>
+                    </div>
                 </div>
             </div>
             <div class="close2" onclick="closeWindow()"></div>
