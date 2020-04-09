@@ -1,6 +1,6 @@
 function checkServer(){
     //based on a pen by @robinselmer
-    var url = "https://api.mcsrvstat.us/2/thespud.xyz";
+    var url = "https://api.mcsrvstat.us/2/thespud.xyz:25567";
     var playerList = "";
     //https://mcapi.us/server/status?ip=666.fluctis.com&port=25757
     $.getJSON(url, function(r) {
