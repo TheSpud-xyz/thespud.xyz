@@ -192,6 +192,7 @@ hr{
 #startmenu img {
     display:inline;
     width:3vh;
+    padding:2px;
 }
 #startmenu li:hover{
     background-color:#190081;
