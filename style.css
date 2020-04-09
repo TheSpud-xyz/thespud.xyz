@@ -111,9 +111,10 @@ h2{
     height: 37%;
     width: 70%;
     color: white;
-    font-family: sans-serif;
+    font-family: MinecraftiaRegular;
 }
 .serverTitle{
+    font-family: MinecraftiaRegular;
     position: absolute;
     top: -7%;
     left: 15%;
@@ -132,9 +133,11 @@ h2{
     left: 90%;
 }
 #serverIcon{
-    width: 13%;
-    position: relative;
+    position: absolute;
+    height: 7vh;
+    width: 7vh;
     top: 0.5%;
+    left: 2%;
 }
 #clock{
     color: black;
