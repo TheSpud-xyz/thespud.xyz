@@ -172,6 +172,13 @@ h2{
     width: inherit;
     height: inherit;
 }
+#minecraftRefreshButton{
+    top: 30vh;
+    left: 29.5vh;
+    width: 13vh;
+    height: 4vh;
+    position: relative;
+}
 
 /* Start menu styling */
 #startmenu{
