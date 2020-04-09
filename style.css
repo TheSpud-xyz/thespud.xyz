@@ -131,6 +131,7 @@ h2{
 .innerPlayersOnline{
     margin-top: 0.2vh;
     color: grey;
+    width: 50vh;
 }
 #rest{
     font-family: MinecraftiaRegular;
