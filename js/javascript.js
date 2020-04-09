@@ -48,14 +48,12 @@ function showContactInfo(){
 function showMinecraft(){
     if ($('.minecraftServerWindow').css('display') == "none") {
         $('.minecraftServerWindow').css("display", "block")
+        checkServer();
     }
 }
 
 function closeWindow(){
-    if ($('.contactWindow').css('display') == "block") {
-        $('.contactWindow').css("display", "none");
-    }
-    if ($('.minecraftServerWindow').css('display') == "block") {
-        $('.minecraftServerWindow').css("display", "none");
+    if ($(event.target).parent().css('display') == "block") {
+        $(event.target).parent().css("display", "none");
     }
 }

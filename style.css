@@ -51,8 +51,11 @@ h2{
     display: none;
 }
 .contactWindowBackground{
-    margin-top: 12%;
-    height: 66%;
+    position: absolute;
+    left: 17%;
+    top: 14%;
+    height: 67%;
+    width: auto;
 }
 .windowTabPressed{
     position: absolute;
@@ -67,11 +70,13 @@ h2{
     height: 2.5%;
 }
 .contactLinkDiv{
-    position: absolute;
-    top: 23%;
-    left: 19.5%;
-    width: 57%;
-    height: 9%;
+    position: relative;
+    top: 14vh;
+    left: 18.8%;
+    width: 59%;
+    height: 7vh;
+    background-color: blue;
+    opacity: 80%;
 }
 .contactLink{
     width: 13%;
@@ -79,9 +84,11 @@ h2{
     position: relative;
     float: left;
     margin-right: 3%;
+    background-color: red;
+    opacity: 80%;
 }
 .close{
-    position:absolute;
+    position: relative;
     top: 16.5%;
     left: 79.5%;
     width: 2%;
