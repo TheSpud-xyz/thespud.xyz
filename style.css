@@ -7,10 +7,6 @@ h2{
     color: white;
     font-family: arial;
 }
-a{
-    text-decoration: none;
-    color: lightgrey;
-}
 .monitor{
     width: 100vh;
     height: 97vh;
@@ -26,6 +22,7 @@ a{
 }
 .icon{
     font-size: 1.6vh;
+    color: lightgrey;
 }
 
 .icons{
@@ -51,6 +48,9 @@ a{
     top: 95%;
 }
 .contactWindow{
+    display: none;
+}
+.contactWindowBackground{
     margin-top: 12%;
     height: 66%;
 }
@@ -114,6 +114,9 @@ a{
     position: absolute;
     top: -7%;
     left: 15%;
+}
+.minecraftServerWindow{
+    display: none;
 }
 #rest{
     position: absolute;

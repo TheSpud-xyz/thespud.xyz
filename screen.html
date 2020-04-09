@@ -1,33 +1,28 @@
+<!-- Desktop -->
     <div class="icons">
-        <div class="icon">
-            <a href="contactInfo.html"><img class="iconImage" src="img/contactInfo.png">
-                <div>Contact Information</div>
-            </a>
+        <div class="icon" onclick="showContactInfo()">
+            <img class="iconImage" src="img/contactInfo.png">
+            <div>Contact Information</div>
         </div>
-        <div class="icon">
-            <a href="minecraftInfo.html"><img class="iconImage" src="img/minecraft.png">
-                <div>Minecraft Servers</div>
-            </a>
+        <div class="icon" onclick="showMinecraft()">
+            <img class="iconImage" src="img/minecraft.png">
+            <div>Minecraft Servers</div>
         </div>
-        <div class="icon">
-            <a href="http://plex.thespud.xyz:32400"><img class="iconImage" src="img/plex.png">
-                <div>Plex</div>
-            </a>
+        <div class="icon" onclick="">
+            <img class="iconImage" src="img/plex.png">
+            <div>Plex</div>
         </div>
-        <div class="icon">
-            <a href="potionSeller.html"><img class="iconImage" src="img/potion.png">
-                <div>Potion Shop</div>
-            </a>
+        <div class="icon" onclick="">
+            <img class="iconImage" src="img/potion.png">
+            <div>Potion Shop</div>
         </div>
-        <div class="icon">
-            <a href="http://thespud.xyz:8123"><img class="iconImage" src="img/minecraftMap.png">
-                <div>Minecraft SMP Map</div>
-            </a>
+        <div class="icon" onclick="">
+            <img class="iconImage" src="img/minecraftMap.png">
+            <div>Minecraft SMP Map</div>
         </div>
-        <div class="icon">
-            <a href="minecraftInfo.html"><img class="iconImage" src="img/minecraft.png">
-                <div>Temp</div>
-            </a>
+        <div class="icon" onclick="">
+            <img class="iconImage" src="img/minecraft.png">
+            <div>Temp</div>
         </div>
     </div>
     <img src="img/start.png" class="startButton" onclick="javascript:startButtonPressed()">
@@ -40,4 +35,39 @@
             <li><img src="https://win98icons.alexmeub.com/icons/png/key_win-4.png" alt=""><div>Log off</div></li>
             <li><img src="https://win98icons.alexmeub.com/icons/png/shut_down_cool-5.png" alt=""><div>Restart</div></li>
         </ul>
+    </div>
+<!-- Minecraft Server Status window -->
+    <div class="minecraftServerWindow">
+            <img src="img/windowTabPressed.png" class="windowTabPressed">
+            <img src="img/minecraftTitle.png" class="contactWindowTabText" style="height: 2.8%;">
+
+            <div class="minecraftServerList">
+                <img src="img/minecraftMultiplayer.png" class="multiplayerWindow">
+                <div class="serverInfo">
+                    <img id="serverIcon">
+                    <div class="serverTitle"><p>thespud.xyz</p></div>
+                    <pre id="rest">Pinging...</pre>
+                    <div id="players"></div>
+                </div>
+            </div>
+            <a href="index.html">
+                <div class="close" onclick="closeWindow()"></div>
+            </a>
+        </div>
+<!-- Contact Page -->
+    <div class="contactWindow">
+        <img src="img/contact.png" class="contactWindowBackground">
+        <img src="img/windowTabPressed.png" class="windowTabPressed">
+        <img src="img/contactTitle.png" class="contactWindowTabText">
+        <a href="index.html">
+            <div class="close" onclick="closeWindow()"></div>
+        </a>
+        <div class="contactLinkDiv">
+            <a href="http://t.me/hazzard1579" class="contactLink"><div class="contactLink"></div></a>
+            <a href="https://steamcommunity.com/id/DigitalJesus_/" class="contactLink"><div class="contactLink"></div></a>
+            <a href="http://discord.gg/QA6RjxR" class="contactLink"><div class="contactLink"></div></a>
+            <a href="https://www.twitch.tv/digitaljesus_" class="contactLink"><div class="contactLink"></div></a>
+            <a href="mailto:hazzard1579@gmail.com" class="contactLink"><div class="contactLink"></div></a>
+            <a href="https://twitter.com/hazzard1579" class="contactLink"><div class="contactLink"></div></a>
+        </div>
     </div>
