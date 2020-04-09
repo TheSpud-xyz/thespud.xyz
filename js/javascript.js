@@ -26,18 +26,46 @@ function includeHTML() {
   }
 }
 
-//Called when start button is pressed
-function startButtonPressed(){
-  console.log("Start button pressed");
-  if ($('#startmenu').css('display') == "none") {
-    $('#startmenu').css("display", "block");
-  } else if ($('#startmenu').css('display') == "block") {
-    $('#startmenu').css("display", "none");
-  }
-};
-//jQuery stuff starting here (sorry Harry)
+
+//jQuery stuff starting here (sorry Harry
+function startMenu(action){
+    console.log('startmenu run');
+    if(action === 'toggle'){
+        if(startMenu('isOpen')){
+            startMenu('close');
+        }else{
+            startMenu('open');
+        }
+    }
+    if(action === 'close'){
+        $('#startmenu').css("display", "none");
+    }
+    if(action === 'open'){
+        $('#startmenu').css("display", "block");
+    }
+    if(action === 'isOpen'){
+        if($('#startmenu').css('display') == "none"){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    if(action === 'isActive'){
+        if($('#startmenu').is(':hover') || $('.startButton').is(':hover')){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
 $(document).ready(function(){
-  console.log("jQuery Loaded")
+  console.log("jQuery Loaded");
+  $(this).click(function(){
+    if(startMenu('isActive')===false){
+        startMenu('close');
+    }
+  });
 });
 
 function showContactInfo(){
