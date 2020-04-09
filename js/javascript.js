@@ -39,3 +39,23 @@ function startButtonPressed(){
 $(document).ready(function(){
   console.log("jQuery Loaded")
 });
+
+function showContactInfo(){
+    if ($('.contactWindow').css('display') == "none") {
+        $('.contactWindow').css("display", "block")
+    }
+}
+function showMinecraft(){
+    if ($('.minecraftServerWindow').css('display') == "none") {
+        $('.minecraftServerWindow').css("display", "block")
+    }
+}
+
+function closeWindow(){
+    if ($('.contactWindow').css('display') == "block") {
+        $('.contactWindow').css("display", "none");
+    }
+    if ($('.minecraftServerWindow').css('display') == "block") {
+        $('.minecraftServerWindow').css("display", "none");
+    }
+}
