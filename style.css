@@ -27,7 +27,7 @@ h2{
 
 .icons{
     text-align: center;
-    width: 8vh;
+    width: 80vh;
     height: 90%;
     position: absolute;
     top: 1%;
@@ -40,6 +40,10 @@ h2{
     height: 5vh;
     max-height: 7vh;
     margin-top: 5px;
+}
+.iconColumn{
+    width: 1vh;
+    padding-right: 1.8vh;
 }
 .startButton{
     width: 8%;

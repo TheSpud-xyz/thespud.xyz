@@ -1,30 +1,60 @@
 <!-- Desktop -->
     <div class="icons">
-        <!-- TOOD: put all icons into a table, so more can be added horizontally -->
-        <div class="icon" onclick="showContactInfo()">
-            <img class="iconImage" src="img/contactInfo.png">
-            <div>Contact Information</div>
-        </div>
-        <div class="icon" onclick="showMinecraft()">
-            <img class="iconImage" src="img/minecraft.png">
-            <div>Minecraft Servers</div>
-        </div>
-        <div class="icon" onclick="">
-            <img class="iconImage" src="img/plex.png">
-            <div>Plex</div>
-        </div>
-        <div class="icon" onclick="">
-            <img class="iconImage" src="img/potion.png">
-            <div>Potion Shop</div>
-        </div>
-        <div class="icon" onclick="">
-            <img class="iconImage" src="img/minecraftMap.png">
-            <div>Minecraft SMP Map</div>
-        </div>
-        <div class="icon" onclick="">
-            <img class="iconImage" src="img/minecraft.png">
-            <div>Temp</div>
-        </div>
+
+        <!-- Desktop Icon Template -->
+        <!-- <td class="iconColumn">
+            <div class="icon" onclick="">
+                <img class="iconImage" src="">
+                <div>Temp</div>
+            </div>
+        </td> -->
+
+        <table>
+            <tr>
+                <td class="iconColumn">
+                    <div class="icon" onclick="showContactInfo()">
+                        <img class="iconImage" src="img/contactInfo.png">
+                        <div>Contact Information</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="iconColumn">
+                    <div class="icon" onclick="showMinecraft()">
+                        <img class="iconImage" src="img/minecraft.png">
+                        <div>Minecraft Servers</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="iconColumn">
+                    <div class="icon" onclick="">
+                        <img class="iconImage" src="img/plex.png">
+                        <div>Plex</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="iconColumn">
+                    <div class="icon" onclick="">
+                        <img class="iconImage" src="img/potion.png">
+                        <div>Potion Shop</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="iconColumn">
+                    <div class="icon" onclick="">
+                        <img class="iconImage" src="img/minecraftMap.png">
+                        <div>Minecraft SMP Map</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+
     </div>
     <img src="img/start.png" class="startButton" onclick="javascript:startMenu('toggle')">
     <div id="startmenu">
