@@ -95,7 +95,7 @@ var windowManager = {
 
         console.log(windowID+' created');
 
-        this.count += 1;
+        this.windowCount += 1;
     }
 };
 
