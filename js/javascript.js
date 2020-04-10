@@ -60,8 +60,48 @@ function startMenu(action){
     }
 }
 
+//Main window manager
+var windowManager = {
+    windowCount:0,
+    close: function() {
+        $(event.target).parent().parent().parent().remove();
+    },
+    new: function(content,title){
+        console.log('new window run');
+
+        //Make new window id based on number of current windows
+        var windowID = "window"+this.windowCount;
+
+        //Add titlebar from titlebar template html
+        var titleBar = $('#titlebarTemplate').html();
+
+        //Create windowTemplate with id of windowID
+        var windowMain = "<div class='windowDefault' id='"+windowID+"'>"+titleBar+"<div class='windowContent'>"+content+"</div></div>";
+
+        //Add template to HTML
+        $('div.screen').append(windowMain);
+
+        //Make new window draggable
+        $('#'+windowID).draggable({
+            addClasses:true,
+            handle:".titleBar"
+        });
+
+        //If user has specified title, set title.
+        if(title === undefined){
+        }else{
+            $('#'+windowID).children('.titleBar').children('.windowTitle').html(title);
+        }
+
+        console.log(windowID+' created');
+
+        this.windowCount += 1;
+    }
+};
+
 $(document).ready(function(){
   console.log("jQuery Loaded");
+  //If user clicks anywhere but the start menu, close the start menu
   $(this).click(function(){
     if(startMenu('isActive')===false){
         startMenu('close');
@@ -76,7 +116,7 @@ function showContactInfo(){
 }
 function showMinecraft(){
     if ($('.minecraftServerWindow').css('display') == "none") {
-        $('.minecraftServerWindow').css("display", "block")
+        $('.minecraftServerWindow').css("display", "block");
         checkServer();
     }
 }
