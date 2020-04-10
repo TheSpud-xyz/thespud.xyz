@@ -261,19 +261,21 @@ hr{
     top:2px;
     left:6px;
     color:white;
+    cursor: default;
 }
 .titleBar{
     background: rgb(0,7,123);
     background: linear-gradient(90deg, rgba(0,7,123,1) 0%, rgba(10,132,206,1) 100%);
     top:3px;
     width:100%;
-    height:calc(1vh + 8px);
+    height:calc(1vh + 11px);
 }
 .titlebuttons{
     float:right;
     position:relative;
-    top:2px;
+    top:1px;
     right:2px;
+    cursor: pointer;
 }
 .titleButton{
     display:inline-block;
