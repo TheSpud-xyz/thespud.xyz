@@ -60,8 +60,8 @@
     <div id="startmenu">
         <div id="sidetext"><span id="v-text"><b>Potatos</b>20</span></div>
         <ul>
-            <a href="http://router.thespud.xyz/"><li><img src="img/win98ico/telephony.ico" alt=""><div>Router</div></li>
-            </a>
+            <a href="http://router.thespud.xyz/"><li><img src="img/win98ico/telephony.ico" alt=""><div>Router</div></li></a>
+            <li onclick="javascript:windowManager.new('Your Content Here','Your Title Here');"><img src="img/win98ico/accesibility_window_abc.ico" alt=""><div>New Window</div></li>
             <a href="http://panel.thespud.xyz/"><li><img src="img/win98ico/computer_taskmgr.ico" alt=""><div>Pterodactyl</div></li></a>
             <hr>
             <li><img src="img/win98ico/key_win.ico" alt=""><div>Log off</div></li>
@@ -107,3 +107,13 @@
             </div>
             <div class="close2" onclick="closeWindow()"></div>
         </div>
+<!-- Window inner template -->
+<div id="titlebarTemplate">
+    <div class="titleBar">
+        <span class="windowTitle"></span>
+        <span class="titlebuttons">
+            <div class="titleButton">?</div>
+            <div class="titleButton" onclick="windowManager.close()">X</div>
+        </span>
+    </div>
+</div>
