@@ -1,3 +1,4 @@
+// Html Paster
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -26,8 +27,6 @@ function includeHTML() {
   }
 }
 
-
-//jQuery stuff starting here (sorry Harry
 function startMenu(action){
     if(action === 'toggle'){
         if(startMenu('isOpen')){
@@ -115,11 +114,8 @@ $(document).ready(function(){
   });
 });
 
+//WindowLoader
 function showContactInfo(){
-    // if ($('.contactWindow').css('display') == "none") {
-    //     $('.contactWindow').css("display", "block")
-    // }
-
     var xhr= new XMLHttpRequest();
     xhr.open('GET', 'contact.html', true);
     xhr.onreadystatechange= function() {
@@ -130,11 +126,6 @@ function showContactInfo(){
     xhr.send();
 }
 function showMinecraft(){
-    // if ($('.minecraftServerWindow').css('display') == "none") {
-    //     $('.minecraftServerWindow').css("display", "block");
-    //     checkServer();
-    // }
-
     var xhr= new XMLHttpRequest();
     xhr.open('GET', 'minecraft.html', true);
     xhr.onreadystatechange= function() {
@@ -144,10 +135,4 @@ function showMinecraft(){
     };
     xhr.send();
     checkServer();
-}
-
-function closeWindow(){
-    if ($(event.target).parent().css('display') == "block") {
-        $(event.target).parent().css("display", "none");
-    }
 }
