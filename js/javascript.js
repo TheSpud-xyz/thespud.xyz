@@ -66,7 +66,7 @@ var windowManager = {
     close: function() {
         $(event.target).parent().parent().parent().remove();
     },
-    new: function(content,title){
+    new: function(content,title, top, left){
         console.log('new window run');
 
         //Make new window id based on number of current windows
@@ -74,9 +74,15 @@ var windowManager = {
 
         //Add titlebar from titlebar template html
         var titleBar = $('#titlebarTemplate').html();
+        if (top == undefined) {
+            top = "0";
+        }
+        if (left == undefined) {
+            left = "0";
+        }
 
         //Create windowTemplate with id of windowID
-        var windowMain = "<div class='windowDefault' id='"+windowID+"'>"+titleBar+"<div class='windowContent'>"+content+"</div></div>";
+        var windowMain = "<div class='windowDefault' style='top: "+top+"; left: "+left+";' id='"+windowID+"'>"+titleBar+"<div class='windowContent'>"+content+"</div></div>";
 
         //Add template to HTML
         $('div.screen').append(windowMain);
@@ -110,15 +116,34 @@ $(document).ready(function(){
 });
 
 function showContactInfo(){
-    if ($('.contactWindow').css('display') == "none") {
-        $('.contactWindow').css("display", "block")
-    }
+    // if ($('.contactWindow').css('display') == "none") {
+    //     $('.contactWindow').css("display", "block")
+    // }
+
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET', 'contact.html', true);
+    xhr.onreadystatechange= function() {
+        if (this.readyState!==4) return;
+        if (this.status!==200) return;
+        javascript:windowManager.new(this.responseText,"<img src=\"img/contactTitle.png\" class=\"contactWindowTabText\">", "15%", "15%");
+    };
+    xhr.send();
 }
 function showMinecraft(){
-    if ($('.minecraftServerWindow').css('display') == "none") {
-        $('.minecraftServerWindow').css("display", "block");
-        checkServer();
-    }
+    // if ($('.minecraftServerWindow').css('display') == "none") {
+    //     $('.minecraftServerWindow').css("display", "block");
+    //     checkServer();
+    // }
+
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET', 'minecraft.html', true);
+    xhr.onreadystatechange= function() {
+        if (this.readyState!==4) return;
+        if (this.status!==200) return;
+        javascript:windowManager.new(this.responseText,"<img src=\"img/minecraftTitle.png\" class=\"contactWindowTabText\">", "10%", "5%");
+    };
+    xhr.send();
+    checkServer();
 }
 
 function closeWindow(){

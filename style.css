@@ -7,6 +7,9 @@ h2{
     color: white;
     font-family: arial;
 }
+p{
+    text-align: left;
+}
 .monitor{
     width: 100vh;
     height: 97vh;
@@ -36,7 +39,8 @@ h2{
     left: 1%;
     text-decoration: none;
     font-size: 10pt;
-    font-family: sans-serif;
+    font-family: "Microsoft Sans Serif";
+    -webkit-font-smoothing: none;
 }
 .iconImage{
     height: 5vh;
@@ -52,15 +56,11 @@ h2{
     position: absolute;
     left: 0.5%;
     top: 95%;
+    cursor: pointer;
 }
-.contactWindow{
-    display: none;
-}
+/* ContactWindow */
 .contactWindowBackground{
-    position: absolute;
-    left: 17%;
-    top: 14%;
-    height: 67%;
+    height: 10vh;
     width: auto;
 }
 .windowTabPressed{
@@ -70,50 +70,46 @@ h2{
     height: 4.3%;
 }
 .contactWindowTabText{
-    position: absolute;
-    top: 96%;
-    left: 9.5%;
-    height: 2.5%;
+    height: 1.6vh;
 }
 .contactLinkDiv{
-    position: relative;
-    top: 14vh;
-    left: 18.8%;
-    width: 59%;
-    height: 7vh;
+    width: 60vh;
+    height: 15vh;
 }
 .contactLink{
-    width: 13%;
-    height: 100%;
+    width: 7vh;
+    height: 5vh;
     position: relative;
-    float: left;
-    margin-right: 3%;
+    font-family: "Microsoft Sans Serif";
+    -webkit-font-smoothing: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
 }
-.close{
-    position: relative;
-    top: 10vh;
-    left: 79.5%;
-    width: 2vh;
-    height: 2vh;
+.contactLinkIco{
+    max-height: 100%;
+    min-height: 5vh;
 }
-.close2{
-    position:absolute;
-    top: 6.5%;
-    left: 97%;
-    width: 2%;
-    height: 2.3%;
+.contactNameTitle{
+    font-family: "Microsoft Sans Serif";
+    -webkit-font-smoothing: none;
+    font-size: 1em;
+    margin-left: 1em;
 }
-.multiplayerWindow{
-    position: absolute;
-    top: 6%;
-    left: 7.4%;
-    height: 70%;
+/* Minecraft */
+.minecraftServerWindow{
+    width: 80vh;
+    height: auto;
+}
+.mcBackground{
+    width: 80vh;
+    height: auto;
 }
 .serverInfo{
     text-align: left;
     position: absolute;
-    left: 20%;
-    top: 19%;
+    left: 16%;
+    top: 15%;
     height: 37%;
     width: 70%;
     color: white;
@@ -121,18 +117,15 @@ h2{
 }
 .serverTitle{
     font-family: MinecraftiaRegular;
-    position: absolute;
-    top: -7%;
-    left: 15%;
-}
-.minecraftServerWindow{
-    display: none;
+    position: relative;
+    top: -12.6%;
+    left: 16%;
 }
 .playersOnline{
     font-size: 0.8em;
     position: relative;
-    top: 7.8vh;
-    left: 9.3vh;
+    top: 2vh;
+    left: 9.1vh;
 }
 .innerPlayersOnline{
     margin-top: 0.2vh;
@@ -145,7 +138,7 @@ h2{
     color: grey;
     position: absolute;
     top: 11%;
-    left: 15.3%;
+    left: 16%;
 }
 #players{
     position: absolute;
@@ -158,6 +151,13 @@ h2{
     width: 7vh;
     top: 0.5%;
     left: 2%;
+}
+#minecraftRefreshButton{
+    top: 36.6vh;
+    left: 27.8vh;
+    width: 8.6vh;
+    height: 2.4vh;
+    position: absolute;
 }
 #clock{
     color: black;
@@ -173,13 +173,6 @@ h2{
 #monitor{
     width: inherit;
     height: inherit;
-}
-#minecraftRefreshButton{
-    top: 30vh;
-    left: 29.5vh;
-    width: 13vh;
-    height: 4vh;
-    position: relative;
 }
 
 /* Start menu styling */
@@ -247,10 +240,8 @@ hr{
     position: absolute;
     border-style: outset;
     border-width: 2px;
-    padding:2px;
 }
 .windowContent{
-    padding:0;
     background-color:white;
     width:100%;
     height:calc(100% - (1vh + 8px));
@@ -285,8 +276,18 @@ hr{
     width:1vh;
     height:1vh;
     font-family:"Microsoft Sans Serif";
+    font-weight: bold;
     font-size: 1vh;
 }
 #titlebarTemplate{
     display:none;
+}
+.optionsBarExplorer{
+    height: 3%;
+    background-color: #BDBDBD;
+    font-family:"Microsoft Sans Serif";
+    text-align: left;
+    font-size: 1.4vh;
+    padding: 2px;
+    cursor: default;
 }
