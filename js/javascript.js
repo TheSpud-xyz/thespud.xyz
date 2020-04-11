@@ -31,7 +31,6 @@ window.onerror = function(error) {
     $('.screen').replaceWith("<img class='bluescreen' src='img/bluescreen.png'><p class='bluescreenText'>"+error+"</p>");
 };
 
-
 function startMenu(action){
     if(action === 'toggle'){
         if(startMenu('isOpen')){
