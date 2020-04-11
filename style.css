@@ -291,3 +291,20 @@ hr{
     padding: 2px;
     cursor: default;
 }
+.bluescreen{
+    position: absolute;
+    top: 7.1vh;
+    left: 7.1vh;
+    height: 66.5vh;
+    width: 86vh;
+}
+.bluescreenText{
+    position: absolute;
+    top: 45.2vh;
+    left: 27.5vh;
+    font-size: 1.1em;
+    color: white;
+    font-family:"Microsoft Sans Serif";
+    font-weight: bold;
+    z-index: 1;
+}
