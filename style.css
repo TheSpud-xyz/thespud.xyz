@@ -59,10 +59,6 @@ p{
     cursor: pointer;
 }
 /* ContactWindow */
-.contactWindowBackground{
-    height: 10vh;
-    width: auto;
-}
 .windowTabPressed{
     position: absolute;
     top: 95%;
@@ -74,15 +70,15 @@ p{
 }
 .contactLinkDiv{
     width: 60vh;
-    height: 15vh;
+    height: auto;
 }
 .contactLink{
     width: 7vh;
-    height: 5vh;
+    height: 7vh;
     position: relative;
     font-family: "Microsoft Sans Serif";
     -webkit-font-smoothing: none;
-    font-size: 0.9em;
+    font-size: 1.3vh;
     text-align: center;
     text-decoration: none;
 }
@@ -93,7 +89,7 @@ p{
 .contactNameTitle{
     font-family: "Microsoft Sans Serif";
     -webkit-font-smoothing: none;
-    font-size: 1em;
+    font-size: 2vh;
     margin-left: 1em;
 }
 /* Minecraft */
@@ -120,9 +116,10 @@ p{
     position: relative;
     top: -12.6%;
     left: 16%;
+    font-size: 1.6vh;
 }
 .playersOnline{
-    font-size: 0.8em;
+    font-size: 1.4vh;
     position: relative;
     top: 2vh;
     left: 9.1vh;
@@ -134,7 +131,7 @@ p{
 }
 #rest{
     font-family: MinecraftiaRegular;
-    font-size: 0.8em;
+    font-size: 1.4vh;
     color: grey;
     position: absolute;
     top: 11%;
@@ -144,6 +141,8 @@ p{
     position: absolute;
     top: -1%;
     left: 90%;
+    font-size: 1.6vh;
+
 }
 #serverIcon{
     position: absolute;
