@@ -11,18 +11,18 @@ p{
     text-align: left;
 }
 .monitor{
-    width: 100vh;
-    height: 97vh;
+    width: auto;
+    height: 105vh;
     display: inline-block;
     position: relative;
 }
 .screen{
         overflow:hidden;
-        width: 85.8%;
-        height: 68.5%;
+        width: 80.6%;
+        height: 64.8%;
         position: absolute;
-        top: 7.4%;
-        left: 7.1%;
+        top: 12.1%;
+        left: 9.9%;
 }
 .icon{
     font-size: 1.6vh;
@@ -70,7 +70,7 @@ p{
 }
 .contactLinkDiv{
     width: auto;
-    height: 30vh;
+    height: 24vh;
 }
 .contactLink{
     width: 7vh;
@@ -87,10 +87,22 @@ p{
     min-height: 5vh;
 }
 .contactNameTitle{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
     font-family: "Microsoft Sans Serif";
     -webkit-font-smoothing: none;
     font-size: 2vh;
     margin-left: 1em;
+    margin-top: 0.8em;
+}
+.harryFace{
+    width: 8vh;
+    height:auto;
+    float: left;
+    margin-right: 2vh;
+    /* Animation */
+    animation: rotation 60s infinite linear;
 }
 /* Minecraft */
 .minecraftServerWindow{
@@ -306,4 +318,28 @@ hr{
     font-family:"Microsoft Sans Serif";
     font-weight: bold;
     z-index: 1;
+}
+
+/* Rotation Animation for harryFace */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.smartass{
+    position: absolute;
+    top: 2453vh;
+    left: 40%;
+    height: 20vh;
+    width: auto;
+}
+.smartass2{
+    color: white;
+    position: absolute;
+    top: 5000vh;
+    left: 44%;
+    padding-bottom: 100px;
 }
