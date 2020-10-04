@@ -24,6 +24,13 @@ p{
         top: 12.1%;
         left: 9.9%;
 }
+.stickyNote{
+    position: absolute;
+    top: 3vh;
+    left: 90vh;
+    height: 20%;
+    width: auto;
+}
 .icon{
     font-size: 1.6vh;
     color: lightgrey;
